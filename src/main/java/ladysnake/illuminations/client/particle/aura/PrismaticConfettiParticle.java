@@ -22,9 +22,9 @@ public class PrismaticConfettiParticle extends ConfettiParticle {
 
         if (owner != null && owner.getUuid() != null && Illuminations.getCosmeticData(owner) != null) {
             PlayerCosmeticData data = Objects.requireNonNull(Illuminations.getCosmeticData(owner));
-            this.colorRed = data.getColorRed() / 255f;
-            this.colorGreen = data.getColorGreen() / 255f;
-            this.colorBlue = data.getColorBlue() / 255f;
+            this.red = data.getred() / 255f;
+            this.green = data.getgreen() / 255f;
+            this.blue = data.getblue() / 255f;
         } else {
             this.markDead();
         }
